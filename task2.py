@@ -1,6 +1,7 @@
 from github import Github
+from config import my_api_key
 
-conn = Github("your_token")
+conn = Github(my_api_key)
 
 repository = conn.get_user().get_repos()
 
